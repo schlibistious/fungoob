@@ -1,5 +1,50 @@
 <html lang="en">
-<head>
-	<title>idk</title>
 
-	<h1>hi :)</h1>
+<style>
+	.gerald {
+		color: #0d1bd8;
+		size: 2in;
+	}
+	.funbutton {
+		font-size: large;
+	}
+</style>
+
+
+<title>
+	idk
+</title>
+
+<h1 class="gerald" id="gerald">
+	hi :)
+</h1>
+
+<a id="BobbyBobBob" href="#"><button class="funbutton" onclick="press(event)" id="funbutton">
+	press me!!
+</button></a>
+
+
+<script>
+	//variables
+	var times = 0;
+
+	otherVariable = {
+		1 : "AAA",
+		2 : "STOP",
+		3 : "AGHYWFVYG",
+		4 : "IT HURTS",
+		5 : "no..."
+
+	}
+	//button function
+	function press(event) {
+		times = times + 1;
+		document.getElementById("gerald").innerHTML = otherVariable[times];
+
+		if (times >= 5) {
+			document.getElementById("BobbyBobBob").href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+		}
+	}
+
+
+</script>
